@@ -1,0 +1,336 @@
+@media (min-width: 608px){
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 30vh; /* Imposta l'altezza del contenitore */
+        box-sizing: border-box;
+        background-color: #000; /* Sfondo nero */
+        background-image: url('file/sf.png'); /* Immagine di sfondo per il div */
+        background-size: cover; /* Assicura che l'immagine copra l'intero contenitore */
+        background-position: center; /* Centra l'immagine di sfondo */
+    }
+}
+
+@media (min-width: 608px) {
+    .text-section {
+        font-size: 0px;
+        height: 15vh;
+        background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente per rendere il testo più leggibile */
+        padding: 10px; /* Aggiunge un po' di spazio intorno al testo */
+        box-sizing: border-box; /* Include il padding nel calcolo della larghezza */
+    }
+
+
+    .text-section p {
+        margin: 0; /* Rimuove il margine di default dei paragrafi */
+        color: #ffffff; /* Cambia il colore del testo per contrastare con lo sfondo chiaro */
+        text-align: left; /* Allinea il testo a sinistra */
+    }
+}
+
+
+@media (min-width: 608px) {
+    .small-image {
+        width: 100px; /* Aumenta la larghezza dell'immagine piccola */
+        height: 100px; /* Aumenta l'altezza dell'immagine piccola */
+        top: 0px; /* Adegua la posizione se necessario */
+        right: 10px; /* Adegua la posizione se necessario */
+    }
+
+    .larger-image {
+        width: 160px; /* Raddop pia la larghezza dell'immagine grande */
+        height: 160px; /* Raddoppia l'altezza dell'immagine grande */
+        margin-top: 60px; /* Adegua lo spazio superiore se necessario */
+    }
+}
+
+/* Assicurati che questa regola sia presente e corretta */
+.highlighted-text p {
+    text-align: center; /* Centra il testo orizzontalmente */
+    color: white; /* Colore del testo */
+    width: 100%; /* Occupa l'intera larghezza del contenitore */
+}
+
+.highlighted-text {
+    font-size: 30px; /* Dimensione grande del testo */
+    color: #2d0606; /* Colore del testo bianco */
+    text-align: center; /* Centra il testo orizzontalmente */
+    width: 100%; /* Occupa l'intera larghezza */
+    text-shadow: 0 0 10px #1c0d0d, 0 0 20px #120303, 0 0 30px #240909, 0 0 40px #ff00ff7c, 0 0 70px #ff00ffb0, 0 0 80px #ff00ff7f, 0 0 100px #ff00ff, 0 0 150px #ff00ff; /* Effetto di illuminazione */
+    margin-top: 20px; /* Spazio dal contenuto sopra */
+    padding: 20px 0; /* Padding superiore e inferiore per distanziarlo ulteriormente */
+}
+
+.images-section {
+    position: relative; /* Contesto di posizionamento per l'immagine sovrapposta */
+    width: 100%;
+    margin-top: 20px; /* Adegua a seconda del layout */
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto; /* Mantiene il rapporto di aspetto */
+}
+
+.overlaid-image {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    width: auto; /* Adatta la larghezza qui per la visualizzazione di base, se necessario */
+    max-width: 150px; /* Esempio di larghezza massima per dispositivi mobili */
+    height: auto;
+}
+
+
+@media (min-width: 768px) { /* Tablet */
+    .overlaid-image {
+        margin-top: 80px;
+        max-width: 350px; /* Larghezza maggiore per tablet */
+        /* Puoi aggiustare la posizione se necessario */
+    }
+    .full-width-image {
+        margin-top: 120px;
+        top: 100px;
+        width: 100%;
+        height: auto; /* Mantiene il rapporto di aspetto */
+    }
+}
+
+@media (min-width: 1024px) { /* Desktop */
+    .overlaid-image {
+        margin-top: 200px;
+        max-width: 600px; /* Larghezza maggiore per desktop */
+        /* Puoi aggiustare la posizione se necessario */
+    }
+    .full-width-image {
+        margin-top: 260px;
+        top: 100px;
+        width: 100%;
+        height: auto; /* Mantiene il rapporto di aspetto */
+    }
+    
+}
+
+.text-below-images {
+    text-align: center; /* Centra il testo orizzontalmente */
+    width: 100%; /* Occupa l'intera larghezza del contenitore */
+    margin-top: 20px; /* Aggiunge spazio sopra il blocco di testo */
+}
+
+.text-below-images p {
+    color: #fff; /* Colore del testo */
+    margin: 5px 0; /* Spazio tra le righe di testo */
+}
+
+.text-size-1 { font-size: 13px; }
+.text-size-2 { font-size: 13px; }
+.text-size-3 { font-size: 15px; }
+.text-size-4{ font-size: 18px; 
+color: red;}
+.text-size-5 { font-size: 22px; }
+
+
+@media (min-width: 1024px) { /* Desktop */
+    .text-below-images p {
+        color: #fff; /* Colore del testo */
+        margin: 5px 0; /* Spazio tra le righe di testo */
+    }
+    
+    .text-size-1 { font-size: 18px; }
+    .text-size-2 { font-size: 21px; }
+    .text-size-3 { font-size: 18px; }
+    .text-size-4 { font-size: 26px; 
+    color: red;}
+    .text-size-5 { font-size: 22px; }
+    
+}
+
+
+.scrolling-images-container {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    height: 50vh; /* O adatta per ogni dispositivo con media queries se necessario */
+}
+
+.image-wrapper {
+    display: flex;
+    width: calc(20vw * 12); /* Adatta in base al numero di immagini e alla loro larghezza iniziale */
+    animation: scroll 20s linear infinite;
+}
+
+.image-wrapper img {
+    width: 20vw; /* Larghezza per computer */
+    height: auto;
+    margin-right: 0px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Assicurati che corrisponda alla larghezza totale del contenuto duplicato */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .image-wrapper img {
+        width: 30vw; /* Tablet */
+    }
+    .image-wrapper {
+        width: calc(30vw * 12); /* Adatta alla nuova larghezza delle immagini */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-wrapper img {
+        width: 40vw; /* Telefoni */
+    }
+    .image-wrapper {
+        width: calc(40vw * 12); /* Adatta alla nuova larghezza delle immagini */
+    }
+}
+
+
+.info-container {
+    background-color: #0d0d0d; /* Grigio scuro */
+    color: white; /* Testo bianco */
+    border: 2px solid rgb(46, 46, 46); /* Bordo bianco */
+    padding: 20px; /* Spazio all'interno del contenitore */
+    margin: 20px auto; /* Spazio sopra e centratura */
+    max-width: 80%; /* Massima larghezza del contenitore */
+  }
+  
+  .content {
+    display: flex; /* Imposta il layout flex per contenere sia le liste che il testo aggiuntivo */
+    justify-content: space-between; /* Spazia i figli uniformemente */
+    align-items: flex-start; /* Allinea i figli all'inizio del contenitore */
+  }
+  
+  .list-container, .additional-text {
+    flex: 1; /* Permette ai figli di occupare spazio uguale nel contenitore */
+    padding: 0 10px; /* Aggiunge spazio intorno al contenuto per una migliore leggibilità */
+  }
+  
+  .info-container ul {
+    padding: 0; /* Rimuovi il padding predefinito per gli ul */
+  }
+  
+  .info-container li {
+    text-align: left; /* Assicura che il testo degli elementi dell'elenco sia allineato a sinistra */
+  }
+  
+
+
+
+
+
+  .content-container {
+    margin-top: 60px;
+    display: flex;
+    align-items: center; /* Centra gli elementi verticalmente */
+    justify-content: space-between; /* Distanzia gli elementi */
+    gap: 20px; /* Distanza tra il video e il testo */
+}
+
+.video-container {
+    flex-basis: 70%; /* Imposta la base del contenitore video al 70% della larghezza del contenitore */
+    height: auto; /* Assicura che l'altezza sia proporzionale alla larghezza */
+}
+
+.text-container {
+    flex-basis: 30%; /* Imposta la base del contenitore di testo al 30% della larghezza del contenitore */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra il contenuto verticalmente */
+}
+
+
+
+
+.text-size-4 {
+    color: red !important;
+    margin-top: 20px !important;
+}
+
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .light-bg {
+    background-color: #303030; /* Grigio chiaro */
+  }
+  
+  .dark-bg {
+    background-color: #1b1a1a; /* Grigio scuro */
+  }
+  
+  .video-section .text-content {
+    width: 50%;
+  }
+  
+  .video-section .video-content {
+    width: 50%;
+  }
+  
+  .video-content video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .video-section {
+    }
+  
+    .video-section .text-content, .video-section .video-content {
+      width: 100%;
+    }
+  }
+  
+  .text-content {
+    margin-top: 50px;
+    padding: 20px; /* Mantiene il padding, ma puoi regolarlo come necessario */
+    text-align: center; /* Centra il testo orizzontalmente */
+  }
+  
+  /* Questa media query si applica solo a schermi più grandi di 768px */
+  @media (min-width: 769px) {
+    .text-content {
+      font-size: 2.5em; /* Aumenta la dimensione del testo solo su schermi più grandi */
+      width: 100%; /* Assicura che il contenuto del testo occupi tutta la larghezza per centrarlo */
+    }
+  }
+  
+
+
+  #back-to-top {
+    display: block; /* Cambiato da inline-block a block per consentire il centramento */
+    background-color: transparent;
+    color: red; /* Colore del testo */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 50px auto 0; /* Aggiunge margine superiore e centra orizzontalmente, rimuove margine destro e sinistro */
+    width: fit-content; /* Assicura che il contenitore si adatti al testo */
+  }
+  
+  #back-to-top:hover {
+    color: #fff; /* Cambia colore al passaggio del mouse */
+    background-color: red; /* Cambia sfondo al passaggio del mouse */
+  }
+  
+
+  

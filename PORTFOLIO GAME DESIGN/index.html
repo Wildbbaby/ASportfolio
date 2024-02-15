@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Angelo Sapienza</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<style>
+    *, *::before, *::after {
+    box-sizing: border-box;
+}
+
+        body, html {
+             
+        overflow-y: hidden; /* Nasconde la barra di scorrimento verticale */
+        overflow-y: auto;
+       }
+
+
+        body {
+
+
+            /* Assicurati che non ci sia overflow: hidden; che potrebbe impedire lo scrolling */
+
+
+/* Media query per schermi con una larghezza minima di 992px, comunemente considerati desktop */
+@media (min-width: 992px) {
+  body, html {
+    overflow-y: auto; /* Assicura lo scrolling verticale */
+  }
+}
+
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-height: 100vh;
+            color: #fff; /* Testo bianco */
+        }
+        .container{
+            border: px solid rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #000; /* Sfondo nero */
+        }
+        .container {
+            background-image: url('file/sf.png'); /* Immagine di sfondo per il div */
+            background-size: cover; /* Copre l'intero sfondo del div senza ripetizioni */
+        }
+        .text-section, .multi-line-text, .text-below {
+            padding: 8px;
+            font-size: 15px;
+        }
+        .multi-line-text {
+            width: 100%; /* Occupa l'intera larghezza disponibile */
+            text-align: center; /* Centra il testo */
+            margin-top: 20px; /* Distanza dal contenuto sopra */
+        }
+        .title-image {
+            width: 100%;
+            display: block; /* Assicura che l'immagine sia blocco per occupare 100% */
+        }
+        .text-below {
+            text-align: center; /* Centra i testi sotto l'immagine */
+            margin-top: 20px; /* Distanza dall'immagine sopra */
+        }
+        .small-image, .larger-image {
+            border-radius: 10px;
+            border: 3px solid white;
+        }
+        .small-image {
+          border-radius: 50px;
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            right: 0;
+            top: -10px;
+        }
+        .larger-image {
+            width: 120px;
+            height: 120px;
+            align-self: flex-end;
+            margin-top: 25px;
+        }
+        .text-size-4{
+            color: red;
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <p>angelo.sapienza16@icloud.com</p>
+            <p>Currently in Romania</p>
+            <p class="phone-number">+40272751917</p>
+        </div>
+        <div class="image-section">
+          <a href="https://www.linkedin.com/in/angelo-sapienza-064553278/"><img src="file/fp.jpeg" alt="Immagine 1" class="small-image"></a>
+          <a href="https://www.linkedin.com/in/angelo-sapienza-064553278/"><img src="file/lg.png" alt="Immagine 2" class="larger-image"></a>
+        </div>
+    </div>
+
+
+    <div class="highlighted-text">
+        <p>RAT TRANSILVANIA IS HERE!</p>
+    </div>
+    
+
+    <div class="images-section">
+        <img src="file/Opera_senza_titolo 26.png" alt="Immagine di sfondo grande" class="full-width-image">
+        <img src="file/Opera_senza_titolo 27.png" alt="Immagine piccola" class="overlaid-image">
+    </div>
+    
+    <div class="text-below-images">
+        <p class="text-size-1">Rat Transilvania is a visual concept for the Igaming market.</p>
+        <p class="text-size-2">I want to show the concept and the creation process to convey my knowledge in the artistic and igaming fields.</p>
+        <p class="text-size-3"></p>
+        <p class="text-size-4">**Measurements and user experience used are unusable for conventional standards, following only visual concept</p>
+        <p class="text-size-5"></p>
+    </div>
+    
+    <div class="scrolling-images-container">
+        <div class="image-wrapper">
+            <img src="file/Opera_senza_titolo 22.png" alt="Immagine 2">
+            <img src="file/Opera_senza_titolo 21.png" alt="Immagine 1">
+            <img src="file/Opera_senza_titolo 23.png" alt="Immagine 3">
+            <img src="file/Opera_senza_titolo 25.png" alt="Immagine 3">
+            <img src="file/Opera_senza_titolo 22.png" alt="Immagine 2">
+            <img src="file/Opera_senza_titolo 21.png" alt="Immagine 1">
+            <img src="file/Opera_senza_titolo 23.png" alt="Immagine 3">
+            <img src="file/Opera_senza_titolo 25.png" alt="Immagine 3">
+            <img src="file/Opera_senza_titolo 22.png" alt="Immagine 2">
+            <img src="file/Opera_senza_titolo 21.png" alt="Immagine 1">
+            <img src="file/Opera_senza_titolo 23.png" alt="Immagine 3">
+            <img src="file/Opera_senza_titolo 25.png" alt="Immagine 3">
+        </div>
+      </div>
+      
+
+ 
+      
+      <div class="container2">
+        <div class="video-section light-bg">
+          <div class="text-content">
+            <p>A time lapse of the creation of the character, from the first sketch to the final result.</p>
+          </div>
+          <div class="video-content">
+            <!-- Inserisci qui il tuo primo video -->
+            <video src="file/viii.mp4" autoplay loop muted playsinline class></video>
+          </div>
+        </div>
+      
+        <div class="video-section dark-bg">
+          <div class="video-content">
+            <!-- Inserisci qui il tuo secondo video -->
+            <video src="file/bk2.mp4" autoplay loop muted playsinline class></video>
+          </div>
+          <div class="text-content">
+            <p>Qui le tue scritte per il secondo video.</p>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="info-container">
+        <div class="content">
+          <div class="list-container">
+            <p>Software used:</p>
+            <ul>
+              <li>Procreate</li>
+              <li>HTML & CSS</li>
+            </ul>
+            <p>Known software:</p>
+            <ul>
+              <li>Photoshop & After Effect</li>
+              <li>Blender</li>
+              <li>Knowledge of the Spine 2D interface</li>
+              <li>Knowledge of the Unity interface</li>
+            </ul>
+          </div>
+          <div class="additional-text">
+            <p>Ability to work with different files and convert in different formats.</p>
+            <p>Knowledge of the limitations of web formats.</p>
+            <p>Desire for growth in the sector.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <a href="#top" id="back-to-top" title="Back to top">BACK TO TOP</a>
+
+
+      <script>
+        document.getElementById('back-to-top').addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+      </script>
+      
+
+</body>
+</html>
